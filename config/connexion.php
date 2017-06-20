@@ -13,22 +13,4 @@
  }
 
 
-
- try
- {
-   $req = $bdd->prepare('INSERT INTO plat (nom, prix, image) VALUES(:nom, :prix, :image)');
-   $req->execute(array(
-     'nom' => $_POST['nom'],
-     'prix' => $_POST['prix'],
-     'image' => $_POST['image']
-   ));
-
- echo "plat saisi";
- }
- catch (Exception $e)
- {
-   echo "votre plat est enregistré dans la liste";
-   //die('Erreur : ' . $e->getMessage());
- }
-
  ?>

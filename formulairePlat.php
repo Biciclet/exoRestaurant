@@ -4,23 +4,30 @@
     <meta charset="utf-8">
     <title>Saisie des plats</title>
     <link rel="stylesheet" href="./assets/css/formulaire.css">
+
   </head>
   <body>
+    <?php
+
+
+
+    ?>
+
     <div class="col2">
       <div class="formulaire">
         <div id="signIn">
           <h1>Bienvenue dans l'interface de saisie des plats</h1>
 
         </div>
-              <form class="" action="traitementLogin.php" method="post" onSubmit="return validation(this);" enctype="multipart/form-data" >
-                <p><label>Saisissez le nom du plat </label><br><input type="text" name="username" autofocus=""></p>
-                  <p><label>Saisissez son prix </label><br><input type="email" name="email" autofocus=""></p>
-                    <p><label>Ajoutez une image ou photo du plat</label><br><input type="img" name="image"></p>
-                    <!-- <p><label>Password verification</label><br><input type="password" name="passwordVerif" value=""></p> -->
+              <form class="" action="traitement.php" method="post" onSubmit="return validation(this);" enctype="multipart/form-data" >
+                <p><label>Saisissez le nom du plat </label><br><input type="text" name="nom" autofocus=""></p>
+                  <p><label>Saisissez son prix </label><br><input type="text" name="prix" autofocus=""></p>
+                   <p><label for="">Importez une image</label><br><input type="file" name="image" value=""></p>
+                  <!-- <p><label>Password verification</label><br><input type="password" name="passwordVerif" value=""></p> -->
 
-                        <!-- <div class="bouton">
-                          <input type="submit" value="Sign In">
-                        </div> -->
+                        <div class="bouton">
+                          <input type="submit" value="Valider">
+                        </div>
                       </form>
 
           <!-- <div id="signInWith">
